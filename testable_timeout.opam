@@ -12,10 +12,10 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.5.0"}
-  "async_kernel"
-  "core"
-  "ppx_jane"
-  "dune"            {>= "3.17.0"}
+  "async_kernel" {>= "v0.18~" & < "v0.19~"}
+  "core" {>= "v0.18~" & < "v0.19~"}
+  "ppx_jane" {>= "v0.18~" & < "v0.19~"}
+  "dune" {>= "3.17.0"}
   "js_of_ocaml-ppx" {>= "6.0.0"}
 ]
 available: arch != "x86_32"
